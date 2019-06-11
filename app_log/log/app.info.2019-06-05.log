@@ -1,0 +1,172 @@
+2019-06-05 20:16:44.575 INFO [main]com.acong.MainApp.logStarting:50 -Starting MainApp on zhaoyanandeMacBook-Pro.local with PID 4829 (/Users/zhaoyanan/code/springboot_redis/target/classes started by zhaoyanan in /Users/zhaoyanan/code/springboot_redis)
+2019-06-05 20:16:44.582 INFO [main]com.acong.MainApp.logStartupProfileInfo:659 -No active profile set, falling back to default profiles: default
+2019-06-05 20:16:44.616 INFO [main]o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.prepareRefresh:590 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3b96c42e: startup date [Wed Jun 05 20:16:44 CST 2019]; root of context hierarchy
+2019-06-05 20:16:45.067 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:163 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-05 20:16:45.380 INFO [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:328 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cbcc52f4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-05 20:16:45.616 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:91 -Tomcat initialized with port(s): 8081 (http)
+2019-06-05 20:16:45.629 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:180 -Initializing ProtocolHandler ["http-nio-8081"]
+2019-06-05 20:16:45.639 INFO [main]org.apache.catalina.core.StandardService.log:180 -Starting service [Tomcat]
+2019-06-05 20:16:45.640 INFO [main]org.apache.catalina.core.StandardEngine.log:180 -Starting Servlet Engine: Apache Tomcat/8.5.29
+2019-06-05 20:16:45.644 INFO [localhost-startStop-1]org.apache.catalina.core.AprLifecycleListener.log:180 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/zhaoyanan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-06-05 20:16:45.728 INFO [localhost-startStop-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:180 -Initializing Spring embedded WebApplicationContext
+2019-06-05 20:16:45.728 INFO [localhost-startStop-1]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:285 -Root WebApplicationContext: initialization completed in 1112 ms
+2019-06-05 20:16:45.820 INFO [localhost-startStop-1]o.s.boot.web.servlet.ServletRegistrationBean.addRegistration:185 -Servlet dispatcherServlet mapped to [/]
+2019-06-05 20:16:45.825 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:244 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-05 20:16:45.826 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:244 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-05 20:16:45.826 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:244 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-05 20:16:45.827 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:244 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-05 20:16:46.506 INFO [main]o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler:373 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-05 20:16:46.730 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache:574 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3b96c42e: startup date [Wed Jun 05 20:16:44 CST 2019]; root of context hierarchy
+2019-06-05 20:16:46.779 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/test/queryAll]}" onto public java.util.List<com.acong.entity.User> com.acong.controller.TestController.queryAll()
+2019-06-05 20:16:46.780 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/test/testController]}" onto public java.lang.String com.acong.controller.TestController.testController()
+2019-06-05 20:16:46.782 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/test/findUserById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.acong.controller.TestController.findUserById(int)
+2019-06-05 20:16:46.782 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/test/updateUser]}" onto public java.lang.String com.acong.controller.TestController.updateUser()
+2019-06-05 20:16:46.783 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/test/deleteUserById]}" onto public java.lang.String com.acong.controller.TestController.deleteUserById(int)
+2019-06-05 20:16:46.785 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-05 20:16:46.785 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-05 20:16:46.808 INFO [main]o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler:373 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-05 20:16:46.808 INFO [main]o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler:373 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-05 20:16:47.189 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated:433 -Registering beans for JMX exposure on startup
+2019-06-05 20:16:47.191 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.autodetect:895 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-06-05 20:16:47.196 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.registerBeanInstance:668 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-06-05 20:16:47.207 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:180 -Starting ProtocolHandler ["http-nio-8081"]
+2019-06-05 20:16:47.230 INFO [main]org.apache.tomcat.util.net.NioSelectorPool.log:180 -Using a shared selector for servlet write/read
+2019-06-05 20:16:47.249 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:206 -Tomcat started on port(s): 8081 (http) with context path ''
+2019-06-05 20:16:47.253 INFO [main]com.acong.MainApp.logStarted:59 -Started MainApp in 23.145 seconds (JVM running for 29.487)
+2019-06-05 20:17:56.117 INFO [http-nio-8081-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:180 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-05 20:17:56.118 INFO [http-nio-8081-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:494 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-06-05 20:17:56.138 INFO [http-nio-8081-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:509 -FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2019-06-05 20:17:56.269 INFO [http-nio-8081-exec-1]io.lettuce.core.EpollProvider.info:101 -Starting without optional epoll library
+2019-06-05 20:17:56.270 INFO [http-nio-8081-exec-1]io.lettuce.core.KqueueProvider.info:101 -Starting without optional kqueue library
+2019-06-05 20:18:01.424 INFO [http-nio-8081-exec-1]com.zaxxer.hikari.HikariDataSource.getConnection:110 -HikariPool-1 - Starting...
+2019-06-05 20:22:09.241 INFO [Thread-49]o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.doClose:993 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3b96c42e: startup date [Wed Jun 05 20:16:44 CST 2019]; root of context hierarchy
+2019-06-05 20:22:09.249 INFO [Thread-49]o.s.jmx.export.annotation.AnnotationMBeanExporter.destroy:451 -Unregistering JMX-exposed beans on shutdown
+2019-06-05 20:22:09.252 INFO [Thread-49]o.s.jmx.export.annotation.AnnotationMBeanExporter.unregisterBeans:183 -Unregistering JMX-exposed beans
+2019-06-05 20:22:49.454 INFO [main]com.acong.MainApp.logStarting:50 -Starting MainApp on zhaoyanandeMacBook-Pro.local with PID 4876 (/Users/zhaoyanan/code/springboot_redis/target/classes started by zhaoyanan in /Users/zhaoyanan/code/springboot_redis)
+2019-06-05 20:22:49.458 INFO [main]com.acong.MainApp.logStartupProfileInfo:659 -No active profile set, falling back to default profiles: default
+2019-06-05 20:22:49.495 INFO [main]o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.prepareRefresh:590 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5965be2d: startup date [Wed Jun 05 20:22:49 CST 2019]; root of context hierarchy
+2019-06-05 20:22:49.935 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:163 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-05 20:22:50.215 INFO [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:328 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9813bc55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-05 20:22:50.444 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:91 -Tomcat initialized with port(s): 8081 (http)
+2019-06-05 20:22:50.456 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:180 -Initializing ProtocolHandler ["http-nio-8081"]
+2019-06-05 20:22:50.464 INFO [main]org.apache.catalina.core.StandardService.log:180 -Starting service [Tomcat]
+2019-06-05 20:22:50.464 INFO [main]org.apache.catalina.core.StandardEngine.log:180 -Starting Servlet Engine: Apache Tomcat/8.5.29
+2019-06-05 20:22:50.469 INFO [localhost-startStop-1]org.apache.catalina.core.AprLifecycleListener.log:180 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/zhaoyanan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-06-05 20:22:50.571 INFO [localhost-startStop-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:180 -Initializing Spring embedded WebApplicationContext
+2019-06-05 20:22:50.572 INFO [localhost-startStop-1]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:285 -Root WebApplicationContext: initialization completed in 1077 ms
+2019-06-05 20:22:50.684 INFO [localhost-startStop-1]o.s.boot.web.servlet.ServletRegistrationBean.addRegistration:185 -Servlet dispatcherServlet mapped to [/]
+2019-06-05 20:22:50.688 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:244 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-05 20:22:50.688 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:244 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-05 20:22:50.689 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:244 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-05 20:22:50.689 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:244 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-05 20:22:51.224 INFO [main]o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler:373 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-05 20:22:51.426 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache:574 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5965be2d: startup date [Wed Jun 05 20:22:49 CST 2019]; root of context hierarchy
+2019-06-05 20:22:51.477 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/test/queryAll]}" onto public java.util.List<com.acong.entity.User> com.acong.controller.TestController.queryAll()
+2019-06-05 20:22:51.478 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/test/testController]}" onto public java.lang.String com.acong.controller.TestController.testController()
+2019-06-05 20:22:51.479 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/test/findUserById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.acong.controller.TestController.findUserById(int)
+2019-06-05 20:22:51.480 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/test/updateUser]}" onto public java.lang.String com.acong.controller.TestController.updateUser()
+2019-06-05 20:22:51.480 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/test/deleteUserById]}" onto public java.lang.String com.acong.controller.TestController.deleteUserById(int)
+2019-06-05 20:22:51.482 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-05 20:22:51.482 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-05 20:22:51.505 INFO [main]o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler:373 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-05 20:22:51.505 INFO [main]o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler:373 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-05 20:22:51.858 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated:433 -Registering beans for JMX exposure on startup
+2019-06-05 20:22:51.859 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.autodetect:895 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-06-05 20:22:51.865 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.registerBeanInstance:668 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-06-05 20:22:51.875 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:180 -Starting ProtocolHandler ["http-nio-8081"]
+2019-06-05 20:22:51.895 INFO [main]org.apache.tomcat.util.net.NioSelectorPool.log:180 -Using a shared selector for servlet write/read
+2019-06-05 20:22:51.912 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:206 -Tomcat started on port(s): 8081 (http) with context path ''
+2019-06-05 20:22:51.917 INFO [main]com.acong.MainApp.logStarted:59 -Started MainApp in 22.824 seconds (JVM running for 28.423)
+2019-06-05 20:22:55.717 INFO [http-nio-8081-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:180 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-05 20:22:55.717 INFO [http-nio-8081-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:494 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-06-05 20:22:55.734 INFO [http-nio-8081-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:509 -FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2019-06-05 20:22:55.846 INFO [http-nio-8081-exec-1]io.lettuce.core.EpollProvider.info:101 -Starting without optional epoll library
+2019-06-05 20:22:55.847 INFO [http-nio-8081-exec-1]io.lettuce.core.KqueueProvider.info:101 -Starting without optional kqueue library
+2019-06-05 20:23:00.966 INFO [http-nio-8081-exec-1]com.zaxxer.hikari.HikariDataSource.getConnection:110 -HikariPool-1 - Starting...
+2019-06-05 20:23:01.612 INFO [http-nio-8081-exec-1]com.zaxxer.hikari.HikariDataSource.getConnection:123 -HikariPool-1 - Start completed.
+2019-06-05 20:23:01.622 DEBUG[http-nio-8081-exec-1]com.acong.dao.UserDao.findUserById.debug:159 -==>  Preparing: select * from user where uid = ? 
+2019-06-05 20:23:01.638 DEBUG[http-nio-8081-exec-1]com.acong.dao.UserDao.findUserById.debug:159 -==> Parameters: 6(Integer)
+2019-06-05 20:23:01.649 INFO [http-nio-8081-exec-1]o.s.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions:316 -Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-06-05 20:23:01.678 INFO [http-nio-8081-exec-1]org.springframework.jdbc.support.SQLErrorCodesFactory.<init>:128 -SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2019-06-05 20:26:22.077 DEBUG[http-nio-8081-exec-4]com.acong.dao.UserDao.findUserById.debug:159 -==>  Preparing: select * from user where uid = ? 
+2019-06-05 20:26:22.079 DEBUG[http-nio-8081-exec-4]com.acong.dao.UserDao.findUserById.debug:159 -==> Parameters: 6(Integer)
+2019-06-05 20:26:22.098 DEBUG[http-nio-8081-exec-4]com.acong.dao.UserDao.findUserById.debug:159 -<==      Total: 0
+2019-06-05 20:26:23.238 DEBUG[http-nio-8081-exec-6]com.acong.dao.UserDao.findUserById.debug:159 -==>  Preparing: select * from user where uid = ? 
+2019-06-05 20:26:23.239 DEBUG[http-nio-8081-exec-6]com.acong.dao.UserDao.findUserById.debug:159 -==> Parameters: 6(Integer)
+2019-06-05 20:26:23.244 DEBUG[http-nio-8081-exec-6]com.acong.dao.UserDao.findUserById.debug:159 -<==      Total: 0
+2019-06-05 20:26:27.793 DEBUG[http-nio-8081-exec-8]com.acong.dao.UserDao.findUserById.debug:159 -==>  Preparing: select * from user where uid = ? 
+2019-06-05 20:26:27.794 DEBUG[http-nio-8081-exec-8]com.acong.dao.UserDao.findUserById.debug:159 -==> Parameters: 6(Integer)
+2019-06-05 20:26:27.798 DEBUG[http-nio-8081-exec-8]com.acong.dao.UserDao.findUserById.debug:159 -<==      Total: 0
+2019-06-05 20:26:28.513 DEBUG[http-nio-8081-exec-10]com.acong.dao.UserDao.findUserById.debug:159 -==>  Preparing: select * from user where uid = ? 
+2019-06-05 20:26:28.514 DEBUG[http-nio-8081-exec-10]com.acong.dao.UserDao.findUserById.debug:159 -==> Parameters: 6(Integer)
+2019-06-05 20:26:28.518 DEBUG[http-nio-8081-exec-10]com.acong.dao.UserDao.findUserById.debug:159 -<==      Total: 0
+2019-06-05 20:26:44.909 DEBUG[http-nio-8081-exec-2]com.acong.dao.UserDao.findUserById.debug:159 -==>  Preparing: select * from user where uid = ? 
+2019-06-05 20:26:44.910 DEBUG[http-nio-8081-exec-2]com.acong.dao.UserDao.findUserById.debug:159 -==> Parameters: 6(Integer)
+2019-06-05 20:26:44.915 DEBUG[http-nio-8081-exec-2]com.acong.dao.UserDao.findUserById.debug:159 -<==      Total: 0
+2019-06-05 20:27:20.654 DEBUG[http-nio-8081-exec-4]com.acong.dao.UserDao.findUserById.debug:159 -==>  Preparing: select * from user where uid = ? 
+2019-06-05 20:27:20.655 DEBUG[http-nio-8081-exec-4]com.acong.dao.UserDao.findUserById.debug:159 -==> Parameters: 6(Integer)
+2019-06-05 20:27:20.659 DEBUG[http-nio-8081-exec-4]com.acong.dao.UserDao.findUserById.debug:159 -<==      Total: 0
+2019-06-05 20:27:21.379 DEBUG[http-nio-8081-exec-6]com.acong.dao.UserDao.findUserById.debug:159 -==>  Preparing: select * from user where uid = ? 
+2019-06-05 20:27:21.381 DEBUG[http-nio-8081-exec-6]com.acong.dao.UserDao.findUserById.debug:159 -==> Parameters: 6(Integer)
+2019-06-05 20:27:21.385 DEBUG[http-nio-8081-exec-6]com.acong.dao.UserDao.findUserById.debug:159 -<==      Total: 0
+2019-06-05 20:27:22.404 DEBUG[http-nio-8081-exec-8]com.acong.dao.UserDao.findUserById.debug:159 -==>  Preparing: select * from user where uid = ? 
+2019-06-05 20:27:22.405 DEBUG[http-nio-8081-exec-8]com.acong.dao.UserDao.findUserById.debug:159 -==> Parameters: 6(Integer)
+2019-06-05 20:27:22.410 DEBUG[http-nio-8081-exec-8]com.acong.dao.UserDao.findUserById.debug:159 -<==      Total: 0
+2019-06-05 20:28:18.989 DEBUG[http-nio-8081-exec-10]com.acong.dao.UserDao.findUserById.debug:159 -==>  Preparing: select * from user where uid = ? 
+2019-06-05 20:28:18.990 DEBUG[http-nio-8081-exec-10]com.acong.dao.UserDao.findUserById.debug:159 -==> Parameters: 1(Integer)
+2019-06-05 20:28:19.001 DEBUG[http-nio-8081-exec-10]com.acong.dao.UserDao.findUserById.debug:159 -<==      Total: 1
+2019-06-05 20:36:25.414 INFO [Thread-48]o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.doClose:993 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5965be2d: startup date [Wed Jun 05 20:22:49 CST 2019]; root of context hierarchy
+2019-06-05 20:36:25.418 INFO [Thread-48]o.s.jmx.export.annotation.AnnotationMBeanExporter.destroy:451 -Unregistering JMX-exposed beans on shutdown
+2019-06-05 20:36:25.419 INFO [Thread-48]o.s.jmx.export.annotation.AnnotationMBeanExporter.unregisterBeans:183 -Unregistering JMX-exposed beans
+2019-06-05 20:36:26.543 INFO [Thread-48]com.zaxxer.hikari.HikariDataSource.close:381 -HikariPool-1 - Shutdown initiated...
+2019-06-05 20:36:26.552 INFO [Thread-48]com.zaxxer.hikari.HikariDataSource.close:383 -HikariPool-1 - Shutdown completed.
+2019-06-05 21:50:35.558 INFO [main]com.acong.MainApp.logStarting:50 -Starting MainApp on zhaoyanandeMacBook-Pro.local with PID 523 (/Users/zhaoyanan/code/springboot_redis/target/classes started by zhaoyanan in /Users/zhaoyanan/code/springboot_redis)
+2019-06-05 21:50:35.564 INFO [main]com.acong.MainApp.logStartupProfileInfo:659 -No active profile set, falling back to default profiles: default
+2019-06-05 21:50:35.618 INFO [main]o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.prepareRefresh:590 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@41e68d87: startup date [Wed Jun 05 21:50:35 CST 2019]; root of context hierarchy
+2019-06-05 21:50:36.287 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:163 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-05 21:50:36.727 INFO [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:328 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f463ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-05 21:50:37.052 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:91 -Tomcat initialized with port(s): 8081 (http)
+2019-06-05 21:50:37.072 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:180 -Initializing ProtocolHandler ["http-nio-8081"]
+2019-06-05 21:50:37.085 INFO [main]org.apache.catalina.core.StandardService.log:180 -Starting service [Tomcat]
+2019-06-05 21:50:37.085 INFO [main]org.apache.catalina.core.StandardEngine.log:180 -Starting Servlet Engine: Apache Tomcat/8.5.29
+2019-06-05 21:50:37.101 INFO [localhost-startStop-1]org.apache.catalina.core.AprLifecycleListener.log:180 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/zhaoyanan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-06-05 21:50:37.191 INFO [localhost-startStop-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:180 -Initializing Spring embedded WebApplicationContext
+2019-06-05 21:50:37.191 INFO [localhost-startStop-1]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:285 -Root WebApplicationContext: initialization completed in 1573 ms
+2019-06-05 21:50:37.338 INFO [localhost-startStop-1]o.s.boot.web.servlet.ServletRegistrationBean.addRegistration:185 -Servlet dispatcherServlet mapped to [/]
+2019-06-05 21:50:37.347 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:244 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-06-05 21:50:37.347 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:244 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-06-05 21:50:37.347 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:244 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-06-05 21:50:37.348 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:244 -Mapping filter: 'requestContextFilter' to: [/*]
+2019-06-05 21:50:38.117 INFO [main]o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler:373 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-05 21:50:38.365 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache:574 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@41e68d87: startup date [Wed Jun 05 21:50:35 CST 2019]; root of context hierarchy
+2019-06-05 21:50:38.431 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/test/queryAll]}" onto public java.util.List<com.acong.entity.User> com.acong.controller.TestController.queryAll()
+2019-06-05 21:50:38.432 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/test/testController]}" onto public java.lang.String com.acong.controller.TestController.testController()
+2019-06-05 21:50:38.434 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/test/findUserById]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.acong.controller.TestController.findUserById(int)
+2019-06-05 21:50:38.434 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/test/updateUser]}" onto public java.lang.String com.acong.controller.TestController.updateUser()
+2019-06-05 21:50:38.434 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/test/deleteUserById]}" onto public java.lang.String com.acong.controller.TestController.deleteUserById(int)
+2019-06-05 21:50:38.436 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-06-05 21:50:38.437 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-06-05 21:50:38.461 INFO [main]o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler:373 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-05 21:50:38.461 INFO [main]o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler:373 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-06-05 21:50:38.858 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated:433 -Registering beans for JMX exposure on startup
+2019-06-05 21:50:38.860 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.autodetect:895 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-06-05 21:50:38.866 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.registerBeanInstance:668 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-06-05 21:50:38.879 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:180 -Starting ProtocolHandler ["http-nio-8081"]
+2019-06-05 21:50:38.906 INFO [main]org.apache.tomcat.util.net.NioSelectorPool.log:180 -Using a shared selector for servlet write/read
+2019-06-05 21:50:38.926 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:206 -Tomcat started on port(s): 8081 (http) with context path ''
+2019-06-05 21:50:38.931 INFO [main]com.acong.MainApp.logStarted:59 -Started MainApp in 23.943 seconds (JVM running for 30.45)
+2019-06-05 21:50:56.753 INFO [http-nio-8081-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:180 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-05 21:50:56.753 INFO [http-nio-8081-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:494 -FrameworkServlet 'dispatcherServlet': initialization started
+2019-06-05 21:50:56.773 INFO [http-nio-8081-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:509 -FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2019-06-05 21:50:56.906 INFO [http-nio-8081-exec-1]io.lettuce.core.EpollProvider.info:101 -Starting without optional epoll library
+2019-06-05 21:50:56.908 INFO [http-nio-8081-exec-1]io.lettuce.core.KqueueProvider.info:101 -Starting without optional kqueue library
+2019-06-05 21:51:45.236 INFO [http-nio-8081-exec-7]com.zaxxer.hikari.HikariDataSource.getConnection:110 -HikariPool-1 - Starting...
+2019-06-05 21:51:47.037 INFO [http-nio-8081-exec-7]com.zaxxer.hikari.HikariDataSource.getConnection:123 -HikariPool-1 - Start completed.
+2019-06-05 21:51:47.047 DEBUG[http-nio-8081-exec-7]com.acong.dao.UserDao.findUserById.debug:159 -==>  Preparing: select * from user where uid = ? 
+2019-06-05 21:51:47.069 DEBUG[http-nio-8081-exec-7]com.acong.dao.UserDao.findUserById.debug:159 -==> Parameters: 2(Integer)
+2019-06-05 21:51:47.099 DEBUG[http-nio-8081-exec-7]com.acong.dao.UserDao.findUserById.debug:159 -<==      Total: 1
+2019-06-05 21:59:15.510 INFO [Thread-50]o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.doClose:993 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@41e68d87: startup date [Wed Jun 05 21:50:35 CST 2019]; root of context hierarchy
+2019-06-05 21:59:15.513 INFO [Thread-50]o.s.jmx.export.annotation.AnnotationMBeanExporter.destroy:451 -Unregistering JMX-exposed beans on shutdown
+2019-06-05 21:59:15.514 INFO [Thread-50]o.s.jmx.export.annotation.AnnotationMBeanExporter.unregisterBeans:183 -Unregistering JMX-exposed beans
+2019-06-05 21:59:16.645 INFO [Thread-50]com.zaxxer.hikari.HikariDataSource.close:381 -HikariPool-1 - Shutdown initiated...
+2019-06-05 21:59:16.653 INFO [Thread-50]com.zaxxer.hikari.HikariDataSource.close:383 -HikariPool-1 - Shutdown completed.
