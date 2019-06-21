@@ -1,6 +1,7 @@
 package com.acong.controller;
 
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -14,8 +15,8 @@ import com.acong.entity.User;
 import com.acong.service.UserService;
 
 @Controller
-@RequestMapping("/test")
-public class TestController {
+@RequestMapping("/User")
+public class UserController {
 	
 	@Autowired
 	private UserService userService;
@@ -72,5 +73,28 @@ public class TestController {
 			return "delete success";
 		}
 		return "delete fail";
+	}
+
+	@ResponseBody
+	@RequestMapping("/testMap")
+	public Map<String,String> test1(){
+		Map<String,String> result = new HashMap<>();
+		result.put("a","a");
+		result.put("b","b");
+		result.put("c","c");
+		result.put("d","d");
+		result.put("e","e");
+		return result;
+	}
+
+	@ResponseBody
+	@RequestMapping("/testList")
+	public List<String> test2(){
+		List<String> result = new LinkedList<>();
+		result.add("aaaa");
+		result.add("bbbb");
+		result.add("cccc");
+		result.add("dddd");
+		return result;
 	}
 }

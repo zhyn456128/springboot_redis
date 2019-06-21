@@ -17,5 +17,4 @@ public interface UserDao {
 	int updateUser(@Param("user") User user);
 
 	int deleteUserById(int id);
-	
 }

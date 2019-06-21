@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.acong.dao.UserAdminDao">
+
+    <select id="queryAll" resultType="com.acong.entity.UserAdmin">
+        select * from useradmin
+    </select>
+
+    <select id="findUserAdminById" resultType="com.acong.entity.UserAdmin" parameterType="int">
+        select * from useradmin where user_id = #{user_id}
+    </select>
+    
+    <delete id="deleteById" parameterType="int">
+        delete from useradmin where user_id = #{user_id}
+    </delete>
+    
+    <update id="updateUserAdmin" parameterType="com.acong.entity.UserAdmin">
+        update useradmin
+        <trim prefix="set" suffixOverrides=",">
+            <if test="useradmin.user_name != null and useradmin.user_name != '' ">
+                user_name = #{useradmin.user_name},
+            </if>
+            <if test="useradmin.user_password != null and useradmin.user_password != '' ">
+                user_password = #{useradmin.user_password},
+            </if>
+        </trim>
+        <where>
+            user_id = #{useradmin.user_id}
+        </where>
+    </update>
+
+    <insert id="insertUserAdmin" parameterType="com.acong.entity.UserAdmin">
+        insert into useradmin
+        <trim prefix="(" suffix=") values " suffixOverrides=",">
+             user_name,
+             user_password,
+        </trim>
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+             #{useradmin.user_name},
+             #{useradmin.user_password},
+        </trim>
+    </insert>
+
+</mapper>
