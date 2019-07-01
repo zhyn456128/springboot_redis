@@ -16,4 +16,6 @@ public interface UserAdminDao {
     int deleteById(int user_id);
     int updateUserAdmin(@Param("useradmin") UserAdmin userAdmin);
     int insertUserAdmin(@Param("useradmin") UserAdmin userAdmin);
+
+    List<UserAdmin> findUserAdminByName(String user_name);
 }

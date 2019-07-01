@@ -10,6 +10,10 @@
     <select id="findUserAdminById" resultType="com.acong.entity.UserAdmin" parameterType="int">
         select * from useradmin where user_id = #{user_id}
     </select>
+
+    <select id="findUserAdminByName" resultType="com.acong.entity.UserAdmin" parameterType="String">
+        select * from useradmin where user_name = #{user_name}
+    </select>
     
     <delete id="deleteById" parameterType="int">
         delete from useradmin where user_id = #{user_id}

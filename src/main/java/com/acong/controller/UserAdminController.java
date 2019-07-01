@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.LinkedList;
 import java.util.List;
 
 @RequestMapping("/UserAdmin")
@@ -66,5 +67,12 @@ public class UserAdminController {
             return "delete success";
         }else
             return "delete fail";
+    }
+
+    @ResponseBody
+    @RequestMapping("/findUserAdminByName")
+    public List<UserAdmin> findUserAdminByName(String user_name){
+        List<UserAdmin> lists = userAdminService.findUserAdminByName(user_name);
+        return lists;
     }
 }
