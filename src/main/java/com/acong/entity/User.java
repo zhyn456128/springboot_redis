@@ -1,5 +1,7 @@
 package com.acong.entity;
 
+import org.springframework.stereotype.Repository;
+
 import java.io.Serializable;
 
 public class User implements Serializable{

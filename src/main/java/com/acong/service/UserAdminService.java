@@ -6,9 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
-import org.springframework.data.redis.serializer.RedisSerializer;
-import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -60,13 +59,20 @@ public class UserAdminService {
 
     @Cacheable(value = "cache1",key = "#user_name+'zzzzz'")
 //    @Cacheable(value = "cache1")
-
     public List<UserAdmin> findUserAdminByName(String user_name){
         return userAdminDao.findUserAdminByName(user_name);
     }
 
+    @Transactional //不加此注解，虽然也会报异常，但是数据库会更新
     public int updateUserAdmin(UserAdmin userAdmin){
         int result = userAdminDao.updateUserAdmin(userAdmin);
+
+//        String test = null;
+//        if(test.equals("")){
+//            //该方法会抛出空指针异常，触发事物回滚。
+//        }
+
+        int i = 23/0;
         return result;
     }
 
