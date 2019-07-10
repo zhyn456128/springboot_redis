@@ -8,6 +8,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.interceptor.TransactionAspectSupport;
 
 import java.util.List;
 
@@ -71,8 +72,15 @@ public class UserAdminService {
 //        if(test.equals("")){
 //            //该方法会抛出空指针异常，触发事物回滚。
 //        }
+        try{
+            int i = 23/0;
+        }catch (Exception e){
+            System.out.println("捕获异常");
+            //就是下面这一句了，加上之后，如果try里捕获到了异常,updateUserAdmin是会回滚的。
+            //不加下面这一句，try里捕获到的异常未抛出，updateUserAdmin不会会回滚
+            TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();
+        }
 
-        int i = 23/0;
         return result;
     }
 
